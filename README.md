@@ -28,37 +28,24 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 /* write all the steps invloved */
 
 **PROGRAM**
-
 Developed by:Atchaya B
 
 RegisterNumber:24900268
-
+```
 module outshift(clk, sin, q);
-
 input clk;
-
 input sin;
-
 output [3:0] q;
-
 reg [3:0] q;
-
 always @(posedge clk)
-
 begin
-
 q[0] <= sin;
-
 q[1] <= q[0];
-
 q[2] <= q[1];
-
 q[3] <= q[2];
-
 end
-
 endmodule
-
+```
 
 */
 
@@ -73,5 +60,5 @@ endmodule
 
 
 **RESULTS**
-
+SISO Shift Register using verilog and validating their functionality using their functional tables has successful execution of the program.
 
